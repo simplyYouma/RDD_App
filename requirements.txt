@@ -36,7 +36,6 @@ nbconvert==6.1.0
 notebook==6.4.0
 numpy==1.19.5
 oauthlib==3.1.1
-OpenEye-toolkits-python3.9-win64==2021.1.0b10
 opt-einsum==3.3.0
 packaging==21.0
 parso==0.8.2
