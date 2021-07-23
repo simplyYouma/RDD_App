@@ -36,7 +36,7 @@ nbconvert==6.1.0
 notebook==6.4.0
 numpy==1.19.5
 oauthlib==3.1.1
-opencv-python
+opencv-python==4.5.2.54
 opt-einsum==3.3.0
 packaging==21.0
 parso==0.8.2
