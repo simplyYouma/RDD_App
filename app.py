@@ -100,7 +100,8 @@ def load_model():
 
   PATH_TO_SAVED_MODEL = "saved_model.pb"
   # Load saved model and build the detection function
-  detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
+  detect_fn = tf.saved_model.load("saved_model.pb")
+  #detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
   return detect_fn
 
 st.set_option('deprecation.showfileUploaderEncoding',False)
