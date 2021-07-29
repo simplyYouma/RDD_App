@@ -98,10 +98,10 @@ def final_pipeline1(test_img_path,detect_fn):
 def load_model():
   PATH_TO_MODEL_DIR = 'C:/Users/ASF_Portable/Documents/TensorFlow/workspace/training_demo/models/my_ssd_mobnet/export'
 
-  PATH_TO_SAVED_MODEL = "main/saved_model.pb"
+  PATH_TO_SAVED_MODEL = "https://github.com/simplyYouma/RDD_App/blob/main/saved_model.pb"
   # Load saved model and build the detection function
-  detect_fn = tf.saved_model.load("main/saved_model.pb")
-  #detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
+  #detect_fn = tf.saved_model.load("main/saved_model.pb")
+  detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
   return detect_fn
 
 st.set_option('deprecation.showfileUploaderEncoding',False)
