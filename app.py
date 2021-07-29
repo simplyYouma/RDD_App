@@ -36,7 +36,7 @@ def final_pipeline1(test_img_path,detect_fn):
 
   utils_ops.tf = tf.compat.v1
   tf.gfile = tf.io.gfile
-  PATH_TO_LABELS = 'RDD_App/app.py/label_map.pbtxt'
+  PATH_TO_LABELS = 'RDD_App/label_map.pbtxt'
 
   category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS,
                                                                       use_display_name=True)
@@ -98,7 +98,7 @@ def final_pipeline1(test_img_path,detect_fn):
 def load_model():
   PATH_TO_MODEL_DIR = 'C:/Users/ASF_Portable/Documents/TensorFlow/workspace/training_demo/models/my_ssd_mobnet/export'
 
-  PATH_TO_SAVED_MODEL = "RDD_App/app.py/saved_model"
+  PATH_TO_SAVED_MODEL = "RDD_App/saved_model"
   # Load saved model and build the detection function
   detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
   return detect_fn
