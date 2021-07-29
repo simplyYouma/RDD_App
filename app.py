@@ -83,7 +83,7 @@ def final_pipeline1(test_img_path,detect_fn):
         detections['detection_scores'],
         category_index,
         use_normalized_coordinates=True,
-        max_boxes_to_draw=200,
+        max_boxes_to_draw=5,
         min_score_thresh=.25,
         agnostic_mode=False)
 
