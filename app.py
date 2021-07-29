@@ -36,7 +36,7 @@ def final_pipeline1(test_img_path,detect_fn):
 
   utils_ops.tf = tf.compat.v1
   tf.gfile = tf.io.gfile
-  PATH_TO_LABELS = 'main/label_map.pbtxt'
+  PATH_TO_LABELS = ""
 
   category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS,
                                                                       use_display_name=True)
