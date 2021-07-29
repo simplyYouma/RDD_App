@@ -98,7 +98,7 @@ def final_pipeline1(test_img_path,detect_fn):
 def load_model():
   PATH_TO_MODEL_DIR = 'C:/Users/ASF_Portable/Documents/TensorFlow/workspace/training_demo/models/my_ssd_mobnet/export'
 
-  PATH_TO_SAVED_MODEL = "/app/RDD_App/saved_model.pb"
+  PATH_TO_SAVED_MODEL = "C:/Users/ASF_Portable/Documents/GitHub/RDD_streamlit_webApp/RDD_App/saved_model.pb"
   # Load saved model and build the detection function
   #detect_fn = tf.saved_model.load("main/saved_model.pb")
   detect_fn = tf.saved_model.load(PATH_TO_SAVED_MODEL)
