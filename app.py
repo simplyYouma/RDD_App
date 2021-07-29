@@ -84,7 +84,7 @@ def final_pipeline1(test_img_path,detect_fn):
         category_index,
         use_normalized_coordinates=True,
         max_boxes_to_draw=200,
-        min_score_thresh=.29,
+        min_score_thresh=.25,
         agnostic_mode=False)
 
   #plt.figure(figsize=(10,10))
